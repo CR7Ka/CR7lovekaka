@@ -17,7 +17,7 @@ import ssl
 import os
 import sys
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from urllib.request import Request, urlopen
 from urllib.parse import quote_plus, urlparse
 from urllib.error import HTTPError, URLError
@@ -284,7 +284,7 @@ def save_state(state):
 
 
 def main():
-    now = datetime.now()
+    now = datetime.now(timezone(timedelta(hours=8)))  # 北京时间
     now_str = now.strftime("%Y-%m-%d %H:%M:%S")
     now_ts = time.time()
 
