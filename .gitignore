@@ -1,0 +1,17 @@
+# Windows 专用文件（云端不需要）
+domain_monitor_daemon.py
+domain_monitor.bat
+start_monitor.vbs
+install_startup.bat
+uninstall_startup.bat
+
+# 日志文件
+domain_monitor.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# WorkBuddy
+.workbuddy/
