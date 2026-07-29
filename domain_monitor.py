@@ -52,8 +52,8 @@ if not DINGTALK_WEBHOOK:
 # 钉钉加签密钥（安全设置选"加签"时填写，选"关键词"则留空）
 DINGTALK_SECRET = ""
 
-# 请求超时时间（秒）—— 平衡海外访问延迟和等待时间
-TIMEOUT = 20
+# 请求超时时间（秒）—— 1分钟访问不了才报异常
+TIMEOUT = 60
 
 # 域名不可访问 - 告警冷却时间（秒）
 ALERT_COOLDOWN = 600  # 10 分钟
@@ -428,4 +428,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
