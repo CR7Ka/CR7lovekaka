@@ -53,7 +53,7 @@ if not DINGTALK_WEBHOOK:
 DINGTALK_SECRET = ""
 
 # 请求超时时间（秒）—— 部分学校网站响应较慢，设为30秒避免误报
-TIMEOUT = 30
+TIMEOUT = 15
 
 # 域名不可访问 - 告警冷却时间（秒）
 ALERT_COOLDOWN = 600  # 10 分钟
@@ -70,7 +70,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(SCRIPT_DIR, "domain_monitor_state.json")
 
 
-def check_domain(url, retries=2):
+def check_domain(url, retries=1):
     """
     检查域名是否可访问（含重试机制）
     返回: (is_ok: bool, status_code: int, error_msg: str)
