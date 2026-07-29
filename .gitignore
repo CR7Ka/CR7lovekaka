@@ -5,6 +5,9 @@ start_monitor.vbs
 install_startup.bat
 uninstall_startup.bat
 
+# 本地 Webhook 配置（含敏感信息，不上传）
+local_webhook.py
+
 # 日志文件
 domain_monitor.log
 
