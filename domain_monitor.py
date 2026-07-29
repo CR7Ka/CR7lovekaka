@@ -52,8 +52,8 @@ if not DINGTALK_WEBHOOK:
 # 钉钉加签密钥（安全设置选"加签"时填写，选"关键词"则留空）
 DINGTALK_SECRET = ""
 
-# 请求超时时间（秒）—— 部分学校网站响应较慢，设为30秒避免误报
-TIMEOUT = 15
+# 请求超时时间（秒）—— 平衡海外访问延迟和等待时间
+TIMEOUT = 20
 
 # 域名不可访问 - 告警冷却时间（秒）
 ALERT_COOLDOWN = 600  # 10 分钟
@@ -70,7 +70,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(SCRIPT_DIR, "domain_monitor_state.json")
 
 
-def check_domain(url, retries=1):
+def check_domain(url, retries=2):
     """
     检查域名是否可访问（含重试机制）
     返回: (is_ok: bool, status_code: int, error_msg: str)
