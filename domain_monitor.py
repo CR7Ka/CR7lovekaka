@@ -311,11 +311,18 @@ def main():
         print("[检查] %s (%s)" % (school_name, domain))
 
         # === 1. 域名可访问性检查 ===
-        is_ok, status_code, error = check_domain(domain)
-        if is_ok:
-            print("  -> 访问正常 (HTTP %d)" % status_code)
+        if IS_CLOUD:
+            # 云端只检查SSL证书，不检查域名可达性（海外网络限制会导致误报）
+            print("  -> 云��模式：跳过可达性检查（仅检查SSL）")
+            is_ok = True
+            status_code = 0
+            error = ""
         else:
-            print("  -> 访问异常: %s" % error)
+            is_ok, status_code, error = check_domain(domain)
+            if is_ok:
+                print("  -> 访问正常 (HTTP %d)" % status_code)
+            else:
+                print("  -> 访问异常: %s" % error)
 
         prev = state.get(domain, {})
         was_ok = prev.get("is_ok", True)
