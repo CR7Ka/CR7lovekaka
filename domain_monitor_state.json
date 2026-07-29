@@ -14,15 +14,15 @@
     "ssl_last_alert": 0
   },
   "https://www.csiic.edu.cn/": {
-    "is_ok": true,
-    "last_alert": 1785290416.9661434,
-    "error": "",
+    "is_ok": false,
+    "last_alert": 1785305956.662259,
+    "error": "连接失败: [Errno -3] Temporary failure in name resolution",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
   "https://www.xihang.com.cn/": {
     "is_ok": false,
-    "last_alert": 1785303419.5735397,
+    "last_alert": 1785305956.662259,
     "error": "连接失败: [Errno 101] Network is unreachable",
     "ssl_status": "ok",
     "ssl_last_alert": 0
@@ -36,21 +36,21 @@
   },
   "https://www.amtc.edu.cn/": {
     "is_ok": false,
-    "last_alert": 1785303419.5735397,
-    "error": "连接失败: [Errno 101] Network is unreachable",
+    "last_alert": 1785305956.662259,
+    "error": "服务器内部错误 (HTTP 504)",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
   "https://www.masu.edu.cn/": {
     "is_ok": false,
-    "last_alert": 1785303419.5735397,
+    "last_alert": 1785305956.662259,
     "error": "连接失败: timed out",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
   "https://www.kzvtc.edu.cn/": {
     "is_ok": false,
-    "last_alert": 1785303419.5735397,
+    "last_alert": 1785305956.662259,
     "error": "连接失败: [Errno 101] Network is unreachable",
     "ssl_status": "ok",
     "ssl_last_alert": 0
@@ -70,9 +70,9 @@
     "ssl_last_alert": 0
   },
   "https://www.lzpuvt.edu.cn/": {
-    "is_ok": true,
-    "last_alert": 0,
-    "error": "",
+    "is_ok": false,
+    "last_alert": 1785305956.662259,
+    "error": "连接失败: [Errno 101] Network is unreachable",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   }
