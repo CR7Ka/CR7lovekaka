@@ -1,0 +1,79 @@
+{
+  "https://www.qdjk.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.bymu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.csiic.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 1785290416.9661434,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.xihang.com.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.suse.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.amtc.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.masu.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.kzvtc.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.zzjjxx.com/": {
+    "is_ok": true,
+    "last_alert": 1785292816.595468,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.qut.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  },
+  "https://www.lzpuvt.edu.cn/": {
+    "is_ok": true,
+    "last_alert": 0,
+    "error": "",
+    "ssl_status": "ok",
+    "ssl_last_alert": 0
+  }
+}
