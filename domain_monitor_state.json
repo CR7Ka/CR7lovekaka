@@ -21,9 +21,9 @@
     "ssl_last_alert": 0
   },
   "https://www.xihang.com.cn/": {
-    "is_ok": false,
+    "is_ok": true,
     "last_alert": 1785315302.7978733,
-    "error": "连接失败: [Errno 101] Network is unreachable",
+    "error": "",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
@@ -42,16 +42,16 @@
     "ssl_last_alert": 0
   },
   "https://www.masu.edu.cn/": {
-    "is_ok": false,
+    "is_ok": true,
     "last_alert": 1785315302.7978733,
-    "error": "连接失败: timed out",
+    "error": "",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
   "https://www.kzvtc.edu.cn/": {
-    "is_ok": false,
+    "is_ok": true,
     "last_alert": 1785315302.7978733,
-    "error": "连接失败: [Errno 101] Network is unreachable",
+    "error": "",
     "ssl_status": "ok",
     "ssl_last_alert": 0
   },
