@@ -40,7 +40,14 @@ DOMAINS = [
 ]
 
 # 钉钉自定义机器人 Webhook URL
-DINGTALK_WEBHOOK = "https://oapi.dingtalk.com/robot/send?access_token=a7c96729b9ee11c503030b584ff893ec4494e98721ce3ae69da553729ae7249e"
+# 优先级：环境变量 DINGTALK_WEBHOOK > local_webhook.py > 空
+# GitHub Actions 通过 Secrets 设置环境变量；本地通过 local_webhook.py 配置
+DINGTALK_WEBHOOK = os.environ.get("DINGTALK_WEBHOOK", "")
+if not DINGTALK_WEBHOOK:
+    try:
+        from local_webhook import DINGTALK_WEBHOOK
+    except ImportError:
+        pass
 
 # 钉钉加签密钥（安全设置选"加签"时填写，选"关键词"则留空）
 DINGTALK_SECRET = ""
