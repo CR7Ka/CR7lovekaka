@@ -52,6 +52,9 @@ if not DINGTALK_WEBHOOK:
 # 钉钉加签密钥（安全设置选"加签"时填写，选"关键词"则留空）
 DINGTALK_SECRET = ""
 
+# 是否在 GitHub Actions 云端运行
+IS_CLOUD = os.environ.get("GITHUB_ACTIONS") == "true"
+
 # 请求超时时间（秒）—— 海外服务器访问国内站点较慢，设90秒避免误报
 TIMEOUT = 90
 
@@ -103,6 +106,9 @@ def check_domain(url, retries=2):
             return False, status, str(e)
         except URLError as e:
             reason = str(e.reason) if hasattr(e, 'reason') else str(e)
+            # 云端环境：连接失败通常是网络限制，不告警
+            if IS_CLOUD:
+                return True, 0, "云端网络限制(跳过): %s" % reason
             last_error = "连接失败: %s" % reason
             last_status = 0
             if attempt < retries - 1:
@@ -110,6 +116,9 @@ def check_domain(url, retries=2):
                 continue
             return False, 0, last_error
         except socket.timeout:
+            # 云端环境：超时通常是网络限制，不告警
+            if IS_CLOUD:
+                return True, 0, "云端网络限制(跳过): 超时"
             last_error = "请求超时 (%d秒无响应)" % TIMEOUT
             last_status = 0
             if attempt < retries - 1:
