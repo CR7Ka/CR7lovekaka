@@ -38,6 +38,7 @@ DOMAINS = [
     ("青岛理工大学", "https://www.qut.edu.cn/"),
     ("兰州石化职业技术大学", "https://www.lzpuvt.edu.cn/"),
     ("威海职业学院", "https://www.whvc.edu.cn/"),
+    ("西安音乐学院", "https://www.xacom.edu.cn/"),
 ]
 
 # 钉钉自定义机器人 Webhook URL
