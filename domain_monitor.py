@@ -64,7 +64,7 @@ TIMEOUT = 90
 ALERT_COOLDOWN = 600  # 10 分钟
 
 # SSL 证书告警配置
-SSL_WARNING_DAYS = 30    # 剩余天数 <= 30 时预警
+SSL_WARNING_DAYS = 15    # 剩余天数 <= 15 时预警
 SSL_CRITICAL_DAYS = 7    # 剩余天数 <= 7 时紧急告警
 SSL_ALERT_COOLDOWN = 600  # SSL 告警冷却 10 分钟
 
