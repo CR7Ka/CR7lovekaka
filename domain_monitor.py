@@ -60,13 +60,13 @@ IS_CLOUD = os.environ.get("GITHUB_ACTIONS") == "true"
 # 请求超时时间（秒）—— 海外服务器访问国内站点较慢，设90秒避免误报
 TIMEOUT = 90
 
-# 域名不可访问 - 告警冷却时间（秒）
-ALERT_COOLDOWN = 600  # 10 分钟
+# 域名不可访问 - 告警冷却时间（秒）—— 0 表示实时提醒（每次异常都告警）
+ALERT_COOLDOWN = 0
 
 # SSL 证书告警配置
 SSL_WARNING_DAYS = 15    # 剩余天数 <= 15 时预警
 SSL_CRITICAL_DAYS = 7    # 剩余天数 <= 7 时紧急告警
-SSL_ALERT_COOLDOWN = 600  # SSL 告警冷却 10 分钟
+SSL_ALERT_COOLDOWN = 14400  # SSL 告警冷却 4 小时（14400 秒）
 
 # ==================== 配置区域结束 ====================
 
