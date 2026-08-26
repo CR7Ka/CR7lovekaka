@@ -11,7 +11,7 @@
     "last_alert": 0,
     "error": "",
     "ssl_status": "warning",
-    "ssl_last_alert": 1787738877.9147377
+    "ssl_last_alert": 1787754355.3520267
   },
   "https://www.csiic.edu.cn/": {
     "is_ok": true,
