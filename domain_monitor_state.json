@@ -10,7 +10,7 @@
     "is_ok": true,
     "last_alert": 0,
     "error": "",
-    "ssl_status": "critical",
+    "ssl_status": "ok",
     "ssl_last_alert": 1788414846.2874534
   },
   "https://www.csiic.edu.cn/": {
@@ -67,7 +67,7 @@
     "last_alert": 0,
     "error": "",
     "ssl_status": "warning",
-    "ssl_last_alert": 1788414846.2874534
+    "ssl_last_alert": 1788433056.7329934
   },
   "https://www.lzpuvt.edu.cn/": {
     "is_ok": true,
