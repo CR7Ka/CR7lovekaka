@@ -67,7 +67,7 @@
     "last_alert": 0,
     "error": "",
     "ssl_status": "critical",
-    "ssl_last_alert": 1788916615.0876553
+    "ssl_last_alert": 1788933993.8528945
   },
   "https://www.lzpuvt.edu.cn/": {
     "is_ok": true,
