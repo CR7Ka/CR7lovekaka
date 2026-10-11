@@ -60,7 +60,7 @@
     "last_alert": 1785292816.595468,
     "error": "",
     "ssl_status": "warning",
-    "ssl_last_alert": 1791728874.3498962
+    "ssl_last_alert": 1791745712.5449667
   },
   "https://www.qut.edu.cn/": {
     "is_ok": true,
