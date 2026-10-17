@@ -60,7 +60,7 @@
     "last_alert": 1785292816.595468,
     "error": "",
     "ssl_status": "critical",
-    "ssl_last_alert": 1792201300.6481884
+    "ssl_last_alert": 1792217732.517558
   },
   "https://www.qut.edu.cn/": {
     "is_ok": true,
@@ -74,7 +74,7 @@
     "last_alert": 1785308463.7367623,
     "error": "",
     "ssl_status": "warning",
-    "ssl_last_alert": 1792201300.6481884
+    "ssl_last_alert": 1792217732.517558
   },
   "https://www.whvc.edu.cn/": {
     "is_ok": true,
