@@ -74,7 +74,7 @@
     "last_alert": 1785308463.7367623,
     "error": "",
     "ssl_status": "critical",
-    "ssl_last_alert": 1792866602.1650555
+    "ssl_last_alert": 1792883807.1748314
   },
   "https://www.whvc.edu.cn/": {
     "is_ok": true,
